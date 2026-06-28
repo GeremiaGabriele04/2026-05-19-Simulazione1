@@ -34,9 +34,9 @@ class View(ft.UserControl):
         self._page.controls.append(row1)
 
         self._ddArtist = ft.Dropdown(label="Artist", width=250)
-        self._btnCreaGrafo = ft.ElevatedButton(text="Trova Cammino", on_click=self._controller.handleCammino, width=250)
+        self._btnCammino = ft.ElevatedButton(text="Trova Cammino", on_click=self._controller.handleCammino, width=250)
 
-        row2 = ft.Row([self._ddArtist, self._btnCreaGrafo],
+        row2 = ft.Row([self._ddArtist, self._btnCammino],
                       alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row2)
 
